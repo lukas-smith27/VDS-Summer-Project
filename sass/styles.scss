@@ -1,0 +1,1685 @@
+////////////////////////////////////Welcome////////////////////////////////////////
+
+#welcomelogo {
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#id1 {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+////////////////////////////////////////// Page 1 ///////////////////////////////////////////////
+a {
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+a:hover {
+    background-color: grey;
+    color: black;
+}
+
+.logo {
+    top: 0;
+    left: 0;
+}
+
+input {
+    height: 20px;
+}
+
+label {
+    font-family: sans-serif;
+    font-size: 16px;}
+
+.header {
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+}
+
+.important {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.setupinfo {
+    border-radius: 25px;
+    font-family: sans-serif;
+    font-size: 14px;
+    display: flex;
+    background-color: lightgrey;
+    width: 75%;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+.p1 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+#body1 {
+    animation: fadeIn 1.5s;
+    -webkit-animation: fadeIn 1.5s;
+}
+
+//Flex Boxes
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+}
+
+.information2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    border-radius: 25px;
+    background-color: lightgray;
+    flex-basis: 50%;
+    height: auto;
+    margin: 20px;
+}
+
+.setup {
+    width: 50%;
+    border-radius: 25px;
+    background-color: lightgray;
+    height: auto;
+    margin: 20px auto;
+}
+
+.ans2 {
+    display: none;
+}
+
+.ans3 {
+    display: none;
+}
+
+.boxpg1 {
+    width: 50%;
+    border-radius: 25px;
+    background-color: lightgray;
+    height: auto;
+    margin: 20px auto;
+}
+
+.sectionb {
+    display: none;
+    width: 50%;
+    border-radius: 25px;
+    background-color: lightgray;
+    height: auto;
+    margin: 20px auto;
+}
+
+.sectionc {
+    display: none;
+    width: 50%;
+    border-radius: 25px;
+    background-color: lightgray;
+    height: auto;
+    margin: 20px auto;
+}
+
+.boxpg1corp {
+    display: none;
+    width: 50%;
+    border-radius: 25px;
+    background-color: lightgray;
+    height: auto;
+    margin: 20px auto;
+}
+
+.dealerheader{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+}
+
+.vispro{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+}
+
+.gen{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+}
+
+.dealer {
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+}
+
+.general {
+    margin: 10px
+}
+
+.vp {
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+}
+
+.visionproducts {
+    margin: 10px
+}
+
+.dealinfo {
+    margin: 10px
+}
+
+.corpinfo {
+    margin: 10px
+}
+
+#dealership {
+    margin-top: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    height: 5%;
+    font-size: 16px;
+}
+
+#principal {
+    margin-top: 10px;
+    width: 30%;
+    margin-bottom: 10px;
+    height: 5%;
+    font-size: 16px;
+}
+
+#address {
+    margin-top: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    height: 5%;
+    font-size: 16px;
+}
+
+#city{
+    margin-top: 10px;
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    height: 5%;
+    font-size: 16px;
+}
+
+#state {
+    margin-top: 10px;
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    height: 5%;
+    font-size: 16px;
+}
+
+#zip {
+    margin-top: 10px;
+    width: 20%;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    height: 5%;
+    font-size: 16px;
+}
+
+#phone {
+    margin-top: 10px;
+    width: 20%;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    height: 5%;
+    font-size: 16px;
+}
+
+
+#corporation {
+    margin-top: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    height: 5%;
+    font-size: 16px;
+}
+
+#owner {
+    margin-top: 10px;
+    width: 30%;
+    margin-bottom: 10px;
+    height: 5%;
+    font-size: 16px;
+}
+
+#caddress {
+    margin-top: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    height: 5%;
+    font-size: 16px;
+}
+
+#owner {
+    margin-top: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    height: 5%;
+    font-size: 16px;
+}
+
+#position {
+    margin-top: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    height: 5%;
+    font-size: 16px;
+}
+
+#ccity{
+    margin-top: 10px;
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    height: 5%;
+    font-size: 16px;
+}
+
+#cstate {
+    margin-top: 10px;
+    width: 30%;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: sans-serif;
+    height: 5%;
+    font-size: 16px;
+}
+
+#czip {
+    margin-top: 10px;
+    width: 20%;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    height: 5%;
+    font-size: 16px;
+}
+
+#cphone {
+    margin-top: 10px;
+    width: 20%;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    height: 5%;
+    font-size: 16px;
+}
+
+
+.contactheader {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+}
+
+.agentheader {
+    font-size: 25px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+}
+
+.contactinfo {
+    font-size: 30px;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+}
+
+
+.contact {
+    margin: 10px
+}
+
+#cname {
+    margin-top: 10px;
+    height: 5%;
+    width: 50%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#contactnum {
+    margin-top: 10px;
+    height: 5%;
+    width: 50%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#email{
+    margin-top: 10px;
+    height: 5%;
+    width: 50%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#title {
+    margin-top: 10px;
+    height: 5%;
+    width: 50%;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+
+.agentheader {
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+}
+
+.agent {
+    margin: 0;
+    margin-bottom: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 30px;
+    width: 100%;
+    background: #109CF1;
+    text-align: center;
+    color: white;
+}
+
+
+#agentname {
+    margin: 10px;
+    height: 5%;
+    width: 50%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#agencyname {
+    margin: 10px;
+    height: 5%;
+    width: 50%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#aemail{
+    margin: 10px;
+    height: 5%;
+    width: 50%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#agentnum {
+    margin: 10px;
+    height: 5%;
+    width: 50%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+
+.cb {
+    text-align: center;
+}
+
+th {
+    width: 90%;
+    background-color: #109CF1;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+
+#addstatebutton {
+    height: 30px;
+    width: 100px;
+    background-color: rgb(59, 178, 100);
+    color: white;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+#adddealer {
+    height: 30px;
+    width: 100px;
+    background-color: rgb(59, 178, 100);
+    color: white;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+.line {
+    text-align: center;
+    border-top: 2px solid black;
+    display: block;
+}
+
+.numdealerships {
+    display: none;
+}
+
+#addstatebutton:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+#adddealer:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.p2back {
+    border-radius: 20px;
+    background-color: lightgrey;
+    flex-basis: 50%;
+    width: 100%;
+    padding: 1px;
+}
+
+#taxstate {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 75%
+}
+
+#staterate {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 25%;
+}
+
+.addTaxes {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 75%
+}
+
+.addRate {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 25%;
+}
+
+
+#feetable {
+    padding: 10px;
+    width: 50%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.addfee:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.addfee {
+    display: block;
+    margin: 1%;
+    font-family: sans-serif;
+    background-color: rgb(59, 178, 100);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    height: 30px;
+    width: 100px;
+}
+
+#table th {
+    font-size: 16px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#table td {
+    text-align: center;
+    width: 25%;
+}
+
+.retailtaxcheck {
+    transform: scale(2);
+}
+
+.leasetaxcheck {
+    transform: scale(2);
+}
+
+.upfronttaxcheck {
+    transform: scale(2);
+}
+
+.upfrontfeecheck {
+    transform: scale(2);
+}
+
+// Tax Section
+.taxheader {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+}
+
+.taxes {
+    height: auto;
+    border-radius: 20px;
+    font-family: sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+}
+
+.retail {
+    height: auto;
+    border-radius: 20px;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+}
+
+.feeshead {
+    height: auto;
+    border-radius: 20px;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+}
+
+td {
+    width: 50%;
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+
+.statesdrop {
+    height: 30px;
+    width: 70%;
+}
+
+.statesdrop, .county, .local {
+    display: block;
+}
+
+
+.staterate, .countyrate, .localrate {
+    display: block;
+}
+
+#fees {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 30px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+#price {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 30px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.addrow {
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+.footerinfo {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+
+
+
+/////////////////////////////////////Page 2/////////////////////////////////////
+
+hr {
+    width: 90%;
+    height: 1px;
+}
+
+.boxp2 {
+    border-radius: 20px;
+    margin: 10px auto;
+    display: inline-flexbox;
+    background-color: lightgrey;
+    height: auto;
+    width: 55%;
+    max-width: 80%;
+}
+
+.boxp21 {
+    border-radius: 20px;
+    margin: 10px auto;
+    display: inline-flexbox;
+    background-color: lightgrey;
+    height: auto;
+    width: 55%;
+    max-width: 80%;
+    
+}
+
+.boxp2header {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+}
+
+.integratep {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding-left: 5%;
+}
+
+#check1 {
+    transform: scale(2);
+    margin-right: 10px;
+}
+
+#check2 {
+    transform: scale(2);
+    margin-right: 10px;
+}
+
+.checks {
+    float: right;
+    padding-right: 100px;
+}
+
+#integrationlist {
+    columns: 2;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.intchosen {
+    float: right;
+    text-align: right;
+    padding: 10px;
+}
+
+#intchosen {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#dmsdealer {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.note {
+    text-align: center;
+    font-family: sans-serif;   
+}
+
+.dealnumbers {
+    padding-left: 30px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: red;
+}
+
+.dealnum {
+    float: right;
+    text-align: right;
+    padding: 10px;
+}
+
+#finance {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#cash {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#lease {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.p2header2 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+}
+
+.biweekp {
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#check3 {
+    transform: scale(2);
+    margin-right: 10px;
+}
+
+#check4 {
+    transform: scale(2);
+    margin-right: 10px;
+}
+
+.checks2 {
+    text-align: center;
+}
+
+.biweekinfo {
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#providerlist {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.providerchose {
+    padding: 10px;
+    float: right;
+    text-align: right;
+}
+
+#provider {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#test {
+    padding: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    columns: 2;
+}
+
+#providerlist {
+    padding: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    columns: 2;
+}
+
+///////////////////////////////////Page 3/////////////////////////////////////////@at-root
+
+.pg3 {
+    display: block;
+}
+
+
+.vscbutton:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.vscbutton {
+    display: block;
+    margin: 0 12.5%;
+    font-family: sans-serif;
+    background-color: rgb(59, 178, 100);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    height: 30px;
+    width: 100px;
+}
+
+.gapbutton:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.gapbutton {
+    display: block;
+    margin: 0 12.5%;
+    font-family: sans-serif;
+    background-color: rgb(59, 178, 100);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    height: 30px;
+    width: 100px;
+}
+
+.ancbutton:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.ancbutton {
+    display: block;
+    margin: 0 12.5%;
+    font-family: sans-serif;
+    background-color: rgb(59, 178, 100);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    height: 30px;
+    width: 100px;
+}
+
+
+#deletebutton {
+    background-color: rgb(59, 178, 100);
+    border-radius: 6px;
+    color: white;
+}
+
+#deletebutton:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+#deleterow, #deletebutton:focus {
+    font-family: sans-serif;
+    background-color: rgb(59, 178, 100);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+}
+
+#deleterow:hover, #delete:focus {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.boxp3 {
+    margin: auto;
+    background-color: lightgrey;
+    height: auto;
+    width:100%;
+}
+#products td, th {
+    text-overflow: wrap;
+    border-radius: 5px;
+    border: 1px solid;
+
+}
+
+#products {
+    margin: 0 auto;
+    table-layout: fixed;
+    width: 75%;
+}
+
+
+#vscname, #productprovider, #cost, #markup, #retail {
+    margin: auto;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#gapproducts td, th {
+    border-radius: 7px;
+    border: 1px solid;
+}
+
+#gapname, #gproductprovider, #gcost, #gmarkup, #gretail {
+    margin: auto;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#gapproducts {
+    display: inline-flexbox;
+    margin: 0 auto;
+    table-layout: fixed;
+    width: 75%;
+}
+
+#apname, #aproductprovider, #acost, #amarkup, #aretail{
+    margin: auto;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+button {
+    border: none;
+}
+
+.aproducts {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#ancillary td, th {
+    border-radius: 7px;
+    border: 1px solid;
+}
+
+#ancillary {
+    margin: 0 auto;
+    table-layout: fixed;
+    width: 75%;
+}
+////////////////////////////////Page 4////////////////////////////////////////////
+
+.imagesbox {
+    border-radius: 20px;
+    margin: auto;
+    background-color: lightgrey;
+    height: auto;
+    width: 75%;
+    max-width:80%;
+}
+
+.imagetable {
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.imagetable.td {
+    white-space: nowrap;
+}
+
+.imagetable {
+    border-collapse: collapse;
+}
+
+#classic {
+    transform: scale(2);
+}
+
+#header {
+    transform: scale(2);
+}
+
+#extheader {
+    transform: scale(2);
+}
+
+#cols {
+    transform: scale(2);
+}
+
+.menucolumnoptions {
+    table-layout: fixed;
+    margin-right: auto;
+    margin-left: auto;
+    width: 45%;
+}
+
+.boxp4 {
+    margin: auto;
+    display: inline-flexbox;
+    background-color: lightgrey;
+    height: auto;
+    width:1000px
+    
+}
+
+.sectionbp4 {
+    table-layout: fixed;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+}
+
+.remoteterms {
+    table-layout: fixed;
+    width: 75%;
+}
+
+.questionnaire {
+    table-layout: fixed;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+#questioncheck1 {
+    margin-right: 5px;
+    vertical-align: middle;
+    position: relative;
+    transform: scale(2);
+}
+
+#questioncheck2 {
+    margin-right: 5px;
+    vertical-align: middle;
+    position: relative;
+    transform: scale(2);
+}
+
+
+//////////////////////////////////Page 5/////////////////////////////////////////
+
+.sdp5h {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#checks {
+    padding: 10px;
+    display: block;
+}
+
+#zp {
+    transform: scale(2);
+    margin-right: 8px;
+} 
+
+#tom {
+    transform: scale(2);
+    margin-right: 8px;
+} 
+
+#rf {
+    transform: scale(2);
+    margin-right: 8px; 
+} 
+
+#tomp {
+    transform: scale(2);
+} 
+
+#bpay {
+    transform: scale(2);
+} 
+
+#hide {
+    transform: scale(2);
+} 
+
+#disclosuretable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+#checks2 {
+    padding: 50px;
+    display: block;
+}
+
+#requiredstate {
+    transform: scale(2);
+} 
+
+#payment {
+    transform: scale(2);
+} 
+
+#amfin {
+    transform: scale(2);
+} 
+
+/////////////////////////////////////Page 6//////////////////////////////////////
+
+#lendertable {
+    margin: 0 auto;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.addlender:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.addlender {
+    display: block;
+    margin: 0 20.1%;
+    font-family: sans-serif;
+    background-color: rgb(59, 178, 100);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    height: 30px;
+    width: 100px;
+}
+
+//////////////////////////////////////Page 7////////////////////////////////////
+
+#employees {
+    margin: 0 auto;
+    table-layout: fixed;
+    width: 60%;
+    max-width: 80%;
+}
+
+#employees tr td {
+    text-align: center;
+}
+
+#menuaccess {
+    transform: scale(2);
+}
+
+#vsignaccess {
+    transform: scale(2);
+}
+
+.addemp:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.addemp {
+    display: block;
+    margin: 0 20.1%;
+    font-family: sans-serif;
+    background-color: rgb(59, 178, 100);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    height: 30px;
+    width: 100px;
+}
+
+////////////////////////////////////////Page 8///////////////////////////////////
+
+.modal {
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal_content {
+    position: relative;
+    background-color: white;
+    margin:15%;
+    padding: 20px;
+    width: 65%;
+    height: 20%;
+    max-width: 80%;
+}
+
+.close {
+    color: grey;
+    float: right;
+    font-size: 60px;
+    line-height: 30px;
+
+}
+
+.close:hover, .close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+
+#error_message {
+    text-align: center;
+    height: 50%;
+    justify-content: center;
+    vertical-align: middle;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.submitBtn {
+    text-align: center;
+}
+
+#modalBtn, #modalBtn:focus {
+    background-color: #109CF1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#modalBtn:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+
+///////////////////Color next and previous div///////////////////
+
+#tf, #tf:focus {
+    background-color: #109CF1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#tf:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+#tfb, #tfb:focus {
+    background-color: #109CF1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#tfb:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+#p2, #p2:focus {
+    background-color: #109CF1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#p2:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+#p3, #p3:focus {
+    background-color: #109CF1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#p3:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+#p1b, #p1b:focus {
+    background-color: #109CF1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#p1b:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+#p4, #p4:focus {
+    background-color: #109CF1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#p4:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+#p2b, #p2b:focus {
+    background-color: #109CF1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#p2b:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+#p5, #p5:focus {
+    background-color: #109CF1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#p5:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+#p3b, #p3b:focus {
+    background-color: #109CF1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#p3b:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+#p6, #p6:focus {
+    background-color: #109CF1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#p6:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+#p4b, #p4b:focus {
+    background-color: #109CF1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#p4b:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+#p7, #p7:focus {
+    background-color: #109CF1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#p7:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+#p5b, #p5b:focus {
+    background-color: #109CF1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#p5b:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+#p6b, #p6b:focus {
+    background-color: #109CF1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#p6b:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+///////////////Hide divs from start///////////////////////
+
+
+.taxesfees {
+    display: none;
+}
+
+.pg2 {
+    display: none;
+}
+
+.pg3 {
+    display: none;
+}
+
+.pg4 {
+    display: none;
+}
+
+.pg5 {
+    display: none;
+}
+
+.pg6 {
+    display: none;
+}
+
+.pg7 {
+    display: none;
+}
+
+
+.addTax {
+    background-color: rgb(59, 178, 100);
+    border-radius: 6px;
+    color: white;
+}
+
+.addTax:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+#deleteTax {
+    background-color: rgb(59, 178, 100);
+    border-radius: 6px;
+    color: white;
+}
+
+#deleteTax:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+#nextDealer, #nextDealer:focus {
+    text-align: center;
+    background-color: rgb(59, 178, 100);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 120px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 100px;
+}
+
+#nextDealer:hover{
+    background-color: grey;
+    cursor: pointer;
+}

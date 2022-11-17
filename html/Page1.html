@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/styles.css">
+        <script defer src="../javascript/jquery.js"></script>
+        <script defer src="../javascript/javascript.js"></script>
+        <script defer src="../javascript/main.js"></script>
+    </head>
+
+    <body id="body1">
+
+        <div class="logo">
+            <img src="../Vision-Dealer-Solutions-PNG-Logo.jpg" alt="VisionMenu" height="5%" width="20%">
+        </div>  
+
+        <div class="pg1">
+            <div class="header">
+                <h1 style="font-size: 30px;">Dealership Setup Documents</h1>
+            </div>
+
+            <div class="important">
+                <h1 style="font-size: 20px;">Important Setup Information Below</h1>
+            </div>
+
+
+            <div class="setupinfo">
+                <p>Typical set up time is 10 business days from receiving <strong><u>ALL</u></strong> paperwork, we cannot
+                    process your order until we have all documents. The other necessary forms are 
+                    the SLA (<em>Software Licensing Agreement</em>) and the <em>Schedules A, B, and C (if adding multiple rooftops)</em> Please contact 
+                    your sales rep or email <em>sales@visionmenu.com</em> for any questions regarding these 
+                    forms or if you are missing any of the required documents.
+                </p>
+            </div>
+
+
+            <div class="p1">
+                <strong><p1>Please answer the following questions to assist in the setup of your dealership</p1></strong><br><br>
+                <p1><em>(To insure a timely roll-out, please complete or check <strong><u>ALL</u></strong> applicable fields)</em></p1><br><br>
+            </div>
+
+
+
+            <div class="information">
+
+                <div class="setup">
+                    <div class="vispro">
+                        <h1 class="gen">Dealership Setup Questions</h1>
+                    </div>
+                    <div class="general">
+                        <p style="font-size: 20px; font-family: sans-serif;">Which VisionMenu products will this dealership be utilizing?</p>
+                        <input type="checkbox" class="vm" style="transform: scale(2); margin: 10px 10px;" onchange="hideMenus()">
+                        <label for="vm" style="font-size: 16px; padding: 20px;">VisionMenu</label><br>
+
+
+                        <input type="checkbox" class="vs" style="transform: scale(2); margin: 10px 10px;"onchange="hideMenus()">
+                        <label for="vs" style="font-size: 16px; padding: 20px;">vSignature (Menu Included)</label><br>
+
+                    
+                        <input type="checkbox" class="pj" style="transform: scale(2); margin: 10px 10px;"onchange="hideMenus()">
+                        <label for="pj" style="font-size: 16px; padding: 20px;">vSignature Standalone (VisionMenu eSigning Platform Only)</label><br>
+
+
+                        <input type="checkbox" class="vt" style="transform: scale(2); margin: 10px 10px;"onchange="hideMenus()">
+                        <label for="vt" style="font-size: 16px; padding: 20px;">VisionTouch (Menu and vSignature Included)</label><br>
+
+
+                        <input type="checkbox" class="vr" style="transform: scale(2); margin: 10px 10px;"onchange="hideMenus()">
+                        <label for="vr" style="font-size: 16px; padding: 20px;">VisionReport</label><br>
+                        
+
+                        <div class="ans1">
+                            <p style="font-size: 20px; font-family: sans-serif;">Is your dealership a part of a corporation or group?</p>
+                            <label for="corpy" style="padding: 20px;">Yes</label>
+                            <input type="radio" name="corpbox" class="corpy" id="corpy" value="yes" style="transform: scale(2); margin: 0 10px;" onchange="corp1()">
+                            <label for="corpn" style="padding: 20px;">No</label>
+                            <input type="radio" name="corpbox" class="corpn" id="corpn" value="no" style="transform: scale(2); margin: 0 10px;" checked onchange="corp1()"><br>
+                        </div>
+
+                        <div class="ans2">
+                            <p class="corpadditional" style="font-size: 20px; font-family: sans-serif;">Are you setting up multiple rooftops at this time?</p>
+                            <label for="corpy2" style="padding: 20px;">Yes</label>
+                            <input type="radio" name="corpbox2" class="corpy2" id="corpy2" value="yes" style="transform: scale(2); margin: 0 10px;" onchange="corp2()">
+                            <label for="corpn2" style="padding: 20px;">No</label>
+                            <input type="radio" name="corpbox2" class="corpn2" id="corpn2" value="no" style="transform: scale(2); margin: 0 10px;" onchange="corp2()" checked><br>
+                        </div>
+
+                        <div class="ans3">
+                            <p class="corpadditional" style="font-size: 20px; font-family: sans-serif;">Would you like the products and menu templates of each location to be identical?</p>
+                            <label for="corpy3" style="padding: 20px;">Yes</label>
+                            <input type="radio" name="corpbox3" class="corpy3" id="corpy3" value="yes" style="transform: scale(2); margin: 0 10px;" onchange="corp3()">
+                            <label for="corpn3" style="padding: 20px;">No</label>
+                            <input type="radio" name="corpbox3" class="corpn3" id="corpn3" value="no" style="transform: scale(2); margin: 0 10px;" checked onchange="corp3()"><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="boxpg1">
+                    <div class="dealerheader">
+                        <h1 class="dealer">Dealership Information</h1>
+                    </div>
+                    <div class="dealinfo">
+                        <label for="dealership">Dealership Name:</label><br>
+                        <input type="text" id="dealership" style="font-family: sans-serif;"><br>
+                        <label for="address">Dealership Address:</label><br>
+                        <input type="text" id="address"><br>
+                        <label for="city">City:</label><br>
+                        <input type="text" id="city"><br>
+                        <label for="state">State:</label><br>
+                        <select name="state" class="statesdrop" id="state">
+                            <option disabled selected value>--Select State--</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="GUAM">Guam</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="PR">Puerto Rico</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="DC">Washington D.C.</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <label for="zip">Zip:</label><br>
+                        <input type="text" id="zip"><br>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="text" id="phone"><br>
+                        <label for="principal">Dealer Principal:</label><br>
+                        <input type="text" id="principal" style="font-family: sans-serif;"><br>
+                    </div>
+                </div>
+
+                <div class="boxpg1corp">
+                    <div class="contactheader">
+                        <h1 class="contactinfo">Corporation/Group Information</h1>
+                    </div>
+                    <div class="corpinfo">
+                        <br><label for="corporation">Corporation Name:</label><br>
+                        <input type="text" id="corporation" style="font-family: sans-serif;"><br>
+                        <label for="caddress">Corporation Address:</label><br>
+                        <input type="text" id="caddress"><br>
+                        <label for="ccity">City:</label><br>
+                        <input type="text" id="ccity"><br>
+                        <label for="cstate">State:</label><br>
+                        <select name="cstate" class="cstatesdrop" id="cstate">
+                            <option disabled selected value>--Select State--</option>
+                            <option value="al">Alabama</option>
+                            <option value="ak">Alaska</option>
+                            <option value="az">Arizona</option>
+                            <option value="ar">Arkansas</option>
+                            <option value="ca">California</option>
+                            <option value="co">Colorado</option>
+                            <option value="ct">Connecticut</option>
+                            <option value="de">Delaware</option>
+                            <option value="fl">Florida</option>
+                            <option value="ga">Georgia</option>
+                            <option value="guam">Guam</option>
+                            <option value="hi">Hawaii</option>
+                            <option value="id">Idaho</option>
+                            <option value="il">Illinois</option>
+                            <option value="in">Indiana</option>
+                            <option value="ia">Iowa</option>
+                            <option value="ks">Kansas</option>
+                            <option value="ky">Kentucky</option>
+                            <option value="la">Louisiana</option>
+                            <option value="me">Maine</option>
+                            <option value="md">Maryland</option>
+                            <option value="ma">Massachusetts</option>
+                            <option value="mi">Michigan</option>
+                            <option value="mn">Minnesota</option>
+                            <option value="ms">Mississippi</option>
+                            <option value="mo">Missouri</option>
+                            <option value="mt">Montana</option>
+                            <option value="ne">Nebraska</option>
+                            <option value="nv">Nevada</option>
+                            <option value="nh">New Hampshire</option>
+                            <option value="nj">New Jersey</option>
+                            <option value="nm">New Mexico</option>
+                            <option value="ny">New York</option>
+                            <option value="nc">North Carolina</option>
+                            <option value="nd">North Dakota</option>
+                            <option value="oh">Ohio</option>
+                            <option value="ok">Oklahoma</option>
+                            <option value="or">Oregon</option>
+                            <option value="pa">Pennsylvania</option>
+                            <option value="pr">Puerto Rico</option>
+                            <option value="ri">Rhode Island</option>
+                            <option value="sc">South Carolina</option>
+                            <option value="sd">South Dakota</option>
+                            <option value="tn">Tennessee</option>
+                            <option value="tx">Texas</option>
+                            <option value="ut">Utah</option>
+                            <option value="vt">Vermont</option>
+                            <option value="va">Virginia</option>
+                            <option value="wa">Washington</option>
+                            <option value="wi">Washington D.C.</option>
+                            <option value="wv">West Virginia</option>
+                            <option value="wi">Wisconsin</option>
+                            <option value="wy">Wyoming</option>
+                        </select><br>
+                        <label for="czip">Zip:</label><br>
+                        <input type="text" id="czip"><br>
+                        <label for="principal">Officer of Corporation:</label><br>
+                        <input type="text" id="owner" class="owner" style="font-family: sans-serif;"><br>
+                        <label for="position">Position:</label><br>
+                        <input type="text" id="position" class="position" placeholder="i.e. Owner" style="font-family: sans-serif;"><br>
+                    </div>
+                </div> 
+
+
+
+                <div class="boxpg1">
+                    <div class="contactheader">
+                        <h1 class="contactinfo">Menu Setup Contact Information</h1>
+                    </div>
+                    <div class="contact">
+                        <label for="name">Contact Name:</label><br>
+                        <input type="text" id="cname"><br>
+                        <label for="contactnum">Phone Number:</label><br>
+                        <input type="text" id="contactnum"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email"><br>
+                        <label for="title">Title:</label><br>
+                        <input type="text" id="title"><br>
+                    </div>
+                </div> 
+
+                <div class="boxpg1">
+                    <div class="agentheader">
+                        <h1 class="agent">Agent Contact Information<br>(If Applicable)</h1>
+                    </div>
+                    <div class="agency">
+                        <label for="agentname" style="margin: 10px;">Agent Name:</label><br>
+                        <input type="text" id="agentname"><br>
+                        <label for="agencyname" style="margin: 10px;">Agency:</label><br>
+                        <input type="text" id="agencyname"><br>
+                        <label for="aemail" style="margin: 10px;">Email:</label><br>
+                        <input type="text" id="aemail"><br>
+                        <label for="agentnum" style="margin: 10px;">Phone Number:</label><br>
+                        <input type="text" id="agentnum"><br>
+                    </div>
+                </div> 
+            </div>
+            <button id="tf" style="float: right;">Next</button>
+            <p style="font-family: sans-serif; font-size: 16px; text-align: center;"><strong>Page 1 of 8</strong></p>
+        </div>
+
+        <div class="taxesfees">
+            <h1 style="font-size: 30px; text-align: center; font-family: sans-serif;">Taxes and Fees</h1>
+
+            <div class="information2">
+                <div class="boxp2" id="boxp2">
+                    <div class="taxheader">
+                        <h1 class="taxes">Taxes</h1>
+                    </div>
+                    <table id="taxtable" class="taxtable">
+                        <tbody id="body" class="taxbody">
+                            <tr id="taxinfo" class="statetaxes">
+                                <td>
+                                    <label for="statesdrop">State Tax</label>
+                                    <select name="taxstate" class="statesdrop" id="taxstate">
+                                        <option disabled selected value>--Select State--</option>
+                                        <option value="al">Alabama</option>
+                                        <option value="ak">Alaska</option>
+                                        <option value="az">Arizona</option>
+                                        <option value="ar">Arkansas</option>
+                                        <option value="ca">California</option>
+                                        <option value="co">Colorado</option>
+                                        <option value="ct">Connecticut</option>
+                                        <option value="de">Delaware</option>
+                                        <option value="fl">Florida</option>
+                                        <option value="ga">Georgia</option>
+                                        <option value="guam">Guam</option>
+                                        <option value="hi">Hawaii</option>
+                                        <option value="id">Idaho</option>
+                                        <option value="il">Illinois</option>
+                                        <option value="in">Indiana</option>
+                                        <option value="ia">Iowa</option>
+                                        <option value="ks">Kansas</option>
+                                        <option value="ky">Kentucky</option>
+                                        <option value="la">Louisiana</option>
+                                        <option value="me">Maine</option>
+                                        <option value="md">Maryland</option>
+                                        <option value="ma">Massachusetts</option>
+                                        <option value="mi">Michigan</option>
+                                        <option value="mn">Minnesota</option>
+                                        <option value="ms">Mississippi</option>
+                                        <option value="mo">Missouri</option>
+                                        <option value="mt">Montana</option>
+                                        <option value="ne">Nebraska</option>
+                                        <option value="nv">Nevada</option>
+                                        <option value="nh">New Hampshire</option>
+                                        <option value="nj">New Jersey</option>
+                                        <option value="nm">New Mexico</option>
+                                        <option value="ny">New York</option>
+                                        <option value="nc">North Carolina</option>
+                                        <option value="nd">North Dakota</option>
+                                        <option value="oh">Ohio</option>
+                                        <option value="ok">Oklahoma</option>
+                                        <option value="or">Oregon</option>
+                                        <option value="pa">Pennsylvania</option>
+                                        <option value="pr">Puerto Rico</option>
+                                        <option value="ri">Rhode Island</option>
+                                        <option value="sc">South Carolina</option>
+                                        <option value="sd">South Dakota</option>
+                                        <option value="tn">Tennessee</option>
+                                        <option value="tx">Texas</option>
+                                        <option value="ut">Utah</option>
+                                        <option value="vt">Vermont</option>
+                                        <option value="va">Virginia</option>
+                                        <option value="wa">Washington</option>
+                                        <option value="wi">Washington D.C.</option>
+                                        <option value="wv">West Virginia</option>
+                                        <option value="wi">Wisconsin</option>
+                                        <option value="wy">Wyoming</option>
+                                    </select>
+                                    <button class="addTax" onclick="createRow7(this)" id="addtaxbutton">Add Tax</button>
+                                </td>
+                                <td>
+                                    <input type="text" class="staterate" placeholder="Rate %" id="staterate">
+                                </td>
+                                <td>
+                                    <button id="deletebutton" onclick="$(this).closest('table').remove();">Delete</button>
+                                </td>
+                            </tr>
+                            <tr id="addtax" class="addtax">
+                                <td>
+                                    <label for="addtax"></label>
+                                    <input type="text" class="addTaxes" placeholder="i.e. County Tax">
+
+                                </td>
+                                <td>
+                                    <input type="text" class="addRate" placeholder="Rate %">
+                                </td>
+                                <td>
+                                    <button id="deleteTax" onclick="$(this).closest('tr').remove();">Delete</button>
+                                
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                        <tr>
+                            <td>
+                                <div class="line"></div>
+                            </td>
+                            <td>
+                                <div class="line"></div>
+                            </td>
+                            <td>
+                                <div class="line"></div>
+                            </td>
+                        </tr>
+                    </table>
+                    <button class="addTable" onclick="cloneTable()" id="addstatebutton">Out of State Tax</button>
+                </div>
+
+
+                <div class="boxp21">
+                    <div class="taxheader">
+                        <h1 class="retail">Retail Fees</h1>
+                    </div>
+                <table id="table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Fee Name</p>
+                            </td>
+                            <td>
+                                <p>Fee Amount</p>
+                            </td>
+                            <td>
+                                <p>Taxable?</p>
+                            </td>
+                        </tr>
+                        <tr id="clone" class="clone"><br>
+                            <td style="width: 40%; text-align: center;">
+                                <input type="text" name="fees" id="fees" placeholder="Fee Name" class="retailfeetype">
+                            </td>
+                            <td style="width: 30%; text-align: center;">
+                                <input type="text" placeholder="$ Amount" id="price" class="retailprice">
+                            </td>
+                            <td class="cb">
+                                <input type="checkbox" id="taxcheck" class="retailtaxcheck">
+                            </td>
+                            <td><button id="deletebutton" onclick="deleteRow(this)">Delete</button></td>
+                        </tr>          
+                    </tbody>
+                    
+
+                </table>
+                <button class="addfee" onclick="createRow(this)">Add Fee</button>
+                </div> 
+
+                <div class="boxp21">
+                    <div class="taxheader">
+                        <h1 class="feeshead">Lease Fees</h1>
+                    </div>
+                    <table id="table2">
+                        <tbody>
+                            <tr style="text-align: center;">
+                                <td style="width: 40%; text-align: center;">
+                                    <p>Fee Name</p>
+                                </td>
+                                <td style="width: 30%; text-align: center;">
+                                    <p>Fee Amount</p>
+                                </td>
+                                <td style="width: 10%; text-align: center;">
+                                    <p>Fee Upfront?</p>
+                                </td>
+                                <td style="width: 10%;">
+                                    <p>Taxable?</p>
+                                </td>
+                                <td style="width: 10%;">
+                                    <p>Tax Upfront?</p>
+                                </td>
+                                <td style="width: 10%;"></td>
+                            </tr>
+                            <tr id="clone6" class="clone6">
+                                <td style="width: 20%; text-align: center;">
+                                    <input type="text" name="fees" placeholder="Fee Name" id="fees" class="leasefeetype">
+                                </td>
+                                <td style="width: 20%; text-align: center;">
+                                    <input type="text" placeholder="$ Amount" id="price" class="leaseprice">
+                                </td>
+                                <td class="cb" style="width: 10%; text-align: center;">
+                                    <input type="checkbox" id="upfrontfeecheck" class="upfrontfeecheck">
+                                </td>
+                                <td class="cb" style="width: 10%; text-align: center;">
+                                    <input type="checkbox" id="taxcheck" class="leasetaxcheck"> 
+                                </td>
+                                <td class="cb" style="width: 10%; text-align: center;">
+                                    <input type="checkbox" id="upfronttaxcheck" class="upfronttaxcheck">
+                                </td>
+                                <td><button id="deletebutton" onclick="deleteRow7(this)">Delete</button></td>
+                            </tr>          
+                        </tbody>
+                        
+    
+                    </table>
+                    <button class="addfee" onclick="createRow8(this)">Add Fee</button>
+                    </div>
+            </div>
+            <br>
+
+            <button id="p1b" style="float: left;">Back</button>
+            <button id="p2" style="float: right;">Next</button>
+            <p style="font-family: sans-serif; font-size: 16px; text-align: center;"><strong>Page 2 of 8</strong></p>
+        </div>
+
+        <div class="pg2">
+            
+            <div class="boxp21">
+                <div class="boxp2header">
+                    <h1 class="boxp2head">DMS Integration Information</h1>
+                </div>
+
+                <p class="integratep">
+                    Do you want to integrate from our list below
+                </p>
+                <aside class="checks">
+                    <input type="radio" style="display: inline-block;" id="check1" name="group1" value="Yes" checked>
+                    <label for="check1">Yes</label><br>
+                    <input type="radio" style="display: inline-block;" id="check2" name="group1" value="No">
+                    <label for="check2">No</label>
+                </aside>
+                </p><hr>
+
+                <div id="test" name="test">
+                        <label for="dmsdealer"> DMS Dealer #:  </label>
+                        <input type="text" id="dmsdealer" name="dmsdealer"><br>
+                </div>
+                <div id="test2">
+                    <p class="note">
+                        Please Note: If you wish to integrate your Dealer Management System
+                        with VisionMenu software, there will be an additional document/setup 
+                        required for each DMS. If these documents are not provided initially 
+                        from us, a VDS team member will be reaching out to you.
+                    </p><br>
+                  
+
+                    <aside class="dealnum">
+                        <label for="finance">Finance: </label>
+                        <input type="text" id="finance" name="finance"><br>
+                        <label for="cash"> Cash :  </label>
+                        <input type="text" id="cash" name="cash"><br>
+                        <label for="lease"> Lease:  </label>
+                        <input type="text" id="lease" name="lease">
+                    </aside>
+                    <h1 class="dealnumbers">
+                        Please provide recent Deal Numbers for testing purposes.
+                    </h1><hr>
+                </div>
+            </div>
+
+            <div class="boxp21">
+                <div class="p2header2">
+                    <h1 class="p2h2"> Bi Weekly Provider Information</h1>
+                </div>
+
+                <p class="biweekp">
+                    <strong>Using a Bi-Weekly Payment Provider?</strong> 
+                </p>
+                <div class="checks2">
+                    <input type="radio" style="display: inline-block;" id="check3" name="group2" value="Yes">
+                    <label for="check3">Yes</label>
+                    <input type="radio" style="display: inline-block;" id="check4" name="group2" value="No" checked>
+                    <label for="check4">No</label>
+                </div>
+
+                <div id="biweek" style="font-family: sans-serif; font-size: 20px;">
+                    <p class="biweekinfo" style="font-family: sans-serif;">
+                        <strong>We rate biweekly payments through the following providers. Dealers
+                        must be set up with biweekly providers directly before intergating 
+                        into VisionMenu. Please indicate which provider you are using:</strong>
+                    </p>
+                
+                    <div id="providerlist">
+                    </div>
+                </div>
+            </div><br>
+
+            <button id="p3" style="float: right;">Next</button>
+            <button id="tfb" style="float: left;">Back</button>
+            <p style="font-family: sans-serif; font-size: 16px; text-align: center;"><strong>Page 3 of 8</strong></p>
+
+        </div>
+
+        <div class="pg3">
+            <h1 style="font-family: sans-serif; font-size: 30px; text-align: center;">Dealership Product List</h1>
+            <table id="products">
+                <th style="font-size: 100%; width:25%;">Vehicle Service Contract<br>Name</th>
+                <th style="font-size: 100%; width: 10%;">Primary<br>VSC?</th>
+                <th style="font-size: 100%; width: 20%;">Product Provider</th>
+                <th style="font-size: 100%; width: 10%;">Cost</th>
+                <th style="font-size: 100%; width: 10%;">Retail</th>
+                <th style="font-size: 100%; width: 10%;">Markup</th>
+                <th style="font-size: 100%; width: 10%;">Taxable?</th>
+                <tbody id="pb">
+                    <tr style="background-color: white" id="clone2" class="clone2">
+                        <td>
+                            <input type="text" id="vscname" class="vscname" style="width: 100%;">
+                        </td>
+                        <td style="text-align: center;">
+                            <input type="checkbox" id="primaryvsc" class="primaryvsc" name="primary">
+                        </td>
+                        <td>
+                            <input type="text" id="productprovider" class="productprovider" style="width: 100%;">
+                        <td>
+                            <input type="text" id="cost" class="vsccost" style="width: 100%;">
+                        </td>
+                        <td>
+                            <input type="text" id="retail" class="vscretail" style="width: 100%;">
+                        </td>
+                        <td>
+                            <input type="text" id="markup" placeholder="$ or %" class="vscmarkup" style="width: 100%;">
+                        </td>
+                        <td style="text-align: center;">
+                            <input type="checkbox" id="taxablevsc" class="taxablevsc">
+                        </td>
+                        <td style="width: 50px; text-align:center; border: none;"><input type="button" onclick="deleteRow2(this)" value="Delete" id="deleterow"></button></td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            <input type="button" id="addrow" onclick="createRow2(this)" class="vscbutton" value="Add VSC" />
+
+
+            <table id="gapproducts">
+                <th style="font-size: 100%; width: 25%;">GAP Name</th>
+                <th style="font-size: 100%; width: 10%;">Primary<br>GAP?</th>
+                <th style="font-size: 100%; width: 20%;">Product Provider</th>
+                <th style="font-size: 100%; width: 10%;">Cost</th>
+                <th style="font-size: 100%; width: 10%;">Retail</th>
+                <th style="font-size: 100%; width: 10%;">Markup</th>
+                <th style="font-size: 100%; width: 10%;">Taxable?</th>
+                <tbody id="gb">
+                    <tr style="background-color: white;" id="clone3" class="clone3">
+                        <td style="width: 20%;">
+                            <input type="text" id="gapname" style="width: 100%;" class="gapname">
+                        </td>
+                        <td style="width: 10%; text-align: center;">
+                            <input type="checkbox" id="primarygap" class="primarygap" value="unchecked">
+                        </td>
+                        <td style="width: 10%;">
+                            <input type="text" id="gproductprovider" style="width: 100%;" class="gproductprovider">
+                        </td>
+                        <td style="width: 10%;">
+                            <input type="text" id="gcost" class="gcost" style="width: 100%;">
+                        </td>
+                        <td style="width: 10%;">
+                            <input type="text" id="gretail" class="gretail" style="width: 100%;">
+                        </td>
+                        <td style="width: 10%;">
+                            <input type="text" id="gmarkup" placeholder="$ or %" class="gmarkup" style="width: 100%;">                        </td>
+                        <td style="width: 10%; text-align: center;">
+                            <input type="checkbox" id="taxablegap" class="taxablegap">
+                        </td>
+                        <td style="width: 10%; text-align:center; border: none;"><input type="button" onclick="deleteRow3(this)" value="Delete" id="deleterow"></button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="button" id="addrow" onclick="createRow3(this)" value="Add GAP" class="gapbutton"/>
+
+            <table id="ancillary">
+                <th style="font-size: 100%; width: 25%;">Ancillary Product<br>Name</th>
+                <th style="font-size: 100%; width: 15%;">Product Type</th>
+                <th style="font-size: 100%; width: 15%;">Product Provider</th>
+                <th style="font-size: 100%; width: 10%;">Cost</th>
+                <th style="font-size: 100%; width: 10%;">Retail</th>
+                <th style="font-size: 100%; width: 10%;">Markup</th>
+                <th style="font-size: 100%; width: 10%;">Taxable?</th>
+                <tbody id="ab">
+                    <tr style="background-color: white;" id="clone4" class="clone4">
+                        <td style="width: 20%;">
+                            <input type="text" id="apname" class="apname" style="width: 100%;">
+                        </td>
+                        <td>
+                            <select name="aproducts" id="aproducts" class="aproducts" style="width: 100%;">
+                                <option disabled selected value>--Products--</option>
+                                <option value="appearance">Appearance</option>
+                                <option value="chemical">Chemical</option>
+                                <option value="combo">Combination</option>
+                                <option value="credit">Credit Life</option>
+                                <option value="debt">Debt Cancellation</option>
+                                <option value="dd">Dent & Ding</option>
+                                <option value="ewt">EWT</option>
+                                <option value="ah">A&H/Disability</option>
+                                <option value="key">Key Replacement</option>
+                                <option value="lifetime">Lifetime</option>
+                                <option value="lw">Limited Warranty</option>
+                                <option value="lojack">LoJack</option>
+                                <option value="mnt">Maintenance</option>
+                                <option value="ra">Roadside Assistance</option>
+                                <option value="theft">Theft Protection</option>
+                                <option value="tw">Tire & Wheel</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" id="aproductprovider" class="aproductprovider" style="width: 100%;">
+                        </td>
+                        <td>
+                            <input type="text" id="acost" class="acost" style="width: 100%; height:100%;">
+                        </td>
+                        <td>
+                            <input type="text" id="aretail" class="aretail" style="word-wrap:break-word; width: 100%;">
+                        </td>
+                        <td>
+                            <input type="text" id="amarkup" placeholder="$ or %" class="amarkup" style="width: 100%;">                        </td>
+                        <td style="text-align: center;">
+                            <input type="checkbox" id="taxableanc" class="taxableanc">
+                        </td>
+                        <td style="width: 10%; text-align:center; border: none;"><input type="button" onclick="deleteRow4(this)" value="Delete" id="deleterow" style="border: none;"></button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="button" id="addrow" onclick="createRow4(this)" value="Add Product" class="ancbutton" /><br>
+
+            <button id="p4" style="float: right;">Next</button>
+            <button id="p2b" style="float: left;">Back</button>
+            <p style="font-family: sans-serif; font-size: 16px; text-align: center;"><strong>Page 4 of 8</strong></p>
+
+        </div>
+
+        <div class="pg4">
+            <h1 style="text-align: center; font-family:sans-serif; font-size: 30px;">Menu Options</h1>
+            <h2 style="text-align: center; font-size: 20px; font-family:sans-serif"><em>(If only requesting VisionReport, please skip to Lender List on Page 7)</em></h2>
+
+            <div class="imagesbox">
+                <div class="boxp2header">
+                    <h1 class="box2head">Section A: Required for all VisionMenu Dealers</h1>
+                </div>
+                <div class="images">
+                    <ol>
+                        <strong><li style="font-family:sans-serif; font-size: 20px;">Select Your Menu Style</li></strong>
+                        <table class="imagetable">
+                            <tr>
+                                <td>
+                                    <a href="../Classic Menu Template.pdf" target="_blank">
+                                        <img src="../Classic Menu Template-page-001.jpg" width="100%">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="../Header Menu Template.pdf" target="_blank">
+                                        <img src="../Header Menu Template-page-001.jpg" width="100%"> 
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="../Header Extended Menu Template.pdf" target="_blank">
+                                        <img src="../Header Extended Menu Template-page-001.jpg" width="100%">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="../2 Column Needs Analysis Template.pdf" target="_blank">
+                                        <img src="../2 Column Needs Analysis Template.jpg" width="100%">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="menus">
+                                <td class="classicmenu" style="vertical-align: top; text-align: center;">
+                                    <input type="checkbox" id="classic" name="menuchoice" class="classic">
+                                    <label for="classic"><strong>Classic</strong> - Features product name with a custom description
+                                        beneath all products that appear on the menu.
+                                    </label>
+                                </td>
+                                <td class="headermenu" style="vertical-align: top; text-align: center;">
+                                    <input type="checkbox" id="header" name="menuchoice" class="header">
+                                    <label for="header"><strong>Header</strong> - Has the product descriptions at 
+                                        the top of the menu only and lists the product 
+                                        names in the columns.
+                                    </label>
+                                </td>
+                                <td class="classicmenu" style="vertical-align: top; text-align: center;">
+                                    <input type="checkbox" id="extheader" name="menuchoice" class="extheader">
+                                    <label for="extheader"><strong>Simple</strong> - No product descriptions 
+                                        on the menu. Product names and/or pricing only.
+                                    </label>
+                                </td>
+                                <td class="colsmenu" style="vertical-align: top; text-align: center;">
+                                    <input type="checkbox" id="cols" name="menuchoice" class="cols">
+                                    <label for="cols"><strong>2 Column</strong> - Compare the total package 
+                                        with your customer needs Analysis with this slick 
+                                        side-by-side menu template.
+                                    </label>
+                                </td>
+                            </tr>
+                        </table><hr>
+                        <strong><li style="font-family:sans-serif; font-size: 20px;">Select Menu Column Options </li></strong>
+                        <p style="font-family: sans-serif;"><em>(Choose 1 option per deal type)</em></p>
+
+                        <table class="menucolumnoptions">
+                            <tr>
+                                <th>Finance</th>
+                                <th>Cash</th>
+                                <th>Lease</th>
+                            </tr>
+                            <tr class="column1">
+                                <td>
+                                    <input type="radio" id="f1col" name="1col" class="f1col">
+                                    <label for="f1col">1 Column</label>
+                                </td>
+                                <td>
+                                    <input type="radio" id="c1col" name="2col" class="c1col">
+                                    <label for="c1col">1 Column</label>
+                                </td>
+                                <td>
+                                    <input type="radio" id="l1col" name="3col" class="l1col">
+                                    <label for="l1col">1 Column</label>
+                                </td>
+                            </tr>
+                            <tr class="column2">
+                                <td>
+                                    <input type="radio" id="f2col" class="f2col" name="1col">
+                                    <label for="f2col">2 Column</label>
+                                </td>
+                                <td>
+                                    <input type="radio" id="c2col" class="c2col" name="2col">
+                                    <label for="c2col">2 Column</label>
+                                </td>
+                                <td>
+                                    <input type="radio" id="l2col" class="l2col" name="3col">
+                                    <label for="l2col">2 Column</label>
+                                </td>
+                            </tr>
+                            <tr class="column3">
+                                <td>
+                                    <input type="radio" id="f3col" class="f3col" name="1col">
+                                    <label for="f3col">3 Column</label>
+                                </td>
+                                <td>
+                                    <input type="radio" id="c3col" class="c3col" name="2col">
+                                    <label for="c3col">3 Column</label>
+                                </td>
+                                <td>
+                                    <input type="radio" id="l3col" class="l3col" name="3col">
+                                    <label for="l3col">3 Column</label>
+                                </td>
+                            </tr>
+                            <tr class="column4">
+                                <td>
+                                    <input type="radio" id="f4col" class="f4col" name="1col">
+                                    <label for="f4col">4 Column</label>
+                                </td>
+                                <td>
+                                    <input type="radio" id="c4col" class="c4col" name="2col">
+                                    <label for="c4col">4 Column</label>
+                                </td>
+                                <td>
+                                    <input type="radio" id="l4col" class="l4col" name="3col">
+                                    <label for="l4col">4 Column</label>
+                                </td>
+                            </tr>
+                        </table><hr>
+
+                        <strong><li style="font-family:sans-serif; font-size: 20px;">Select Menu Pricing/Term Options</li></strong>
+                        <p style="font-family: sans-serif;"><em>(Pricing shows on the Menu next to the product name. Select one.)</em></p>
+
+                        <table class="termpricing" style="width: 50%; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <th style="width: 25%;">Pricing</th>
+                                <th>Term</th>
+                            </tr>
+                            <tr class="productpricing">
+                                <td>
+                                    <input type="radio" id="npp" class="npp" name="price">
+                                    <label for="npp">No Product Pricing</label>
+                                </td>
+                            </tr>
+                            <tr class="pricing1">
+                                <td>
+                                    <input type="radio" id="daily" class="daily" name="price">
+                                    <label for="daily">Daily</label>
+                                </td>
+                                <td>
+                                    <input type="radio" id="term1" class="term1" name="term">
+                                    <label for="term1">1 Term</label>
+                                </td>
+                            </tr>
+                            <tr class="pricing2">
+                                <td>
+                                    <input type="radio" id="monthly" class="monthly" name="price">
+                                    <label for="monthly">Monthly</label>
+                                </td>
+                                <td>
+                                    <input type="radio" id="term2" class="term2" name="term">
+                                    <label for="term2">2 Term</label>
+                                </td>
+                            </tr>
+                            <tr class="pricing3">
+                                <td>
+                                    <input type="radio" id="total" class="total" name="price">
+                                    <label for="total">Total</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" id="monthtotal" class="monthtotal" name="price">
+                                    <label for="monthtotal">Month & Total</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </ol>
+                </div>
+            </div>
+            <br>
+
+            <div class="information">
+                <div class="sectionb">
+                    <h1 class="dealer">Section B: Only Required for <u>vSignature</u> Dealers</h1>
+                    <div class="dealerinfo">
+                        <ol>
+                            <strong><li style="font-size: 20px; font-family:sans-serif">Select Remote Menu Column Options
+                                <table class="sectionbp4">
+                                    <tr>
+                                        <th style="font-size: 20px; text-align: center;">Finance</th>
+                                        <th style="font-size: 20px; text-align: center;">Cash</th>
+                                        <th style="font-size: 20px; text-align: center;">Lease</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" id="f1col1" class="f1col1" name="1col1r">
+                                            <label for="f1col1">1 Column</label>
+                                        </td>
+                                        <td>
+                                            <input type="radio" id="c1col1" class="c1col1" name="2col1r">
+                                            <label for="c1col1">1 Column</label>
+                                        </td>
+                                        <td>
+                                            <input type="radio" id="l1col1" class="l1col1" name="3col1r">
+                                            <label for="l1col1">1 Column</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" id="f2col2" class="f2col2" name="1col1r">
+                                            <label for="f2col2">2 Column</label>
+                                        </td>
+                                        <td>
+                                            <input type="radio" id="c2col2" class="c2col2" name="2col1r">
+                                            <label for="c2col2">2 Column</label>
+                                        </td>
+                                        <td>
+                                            <input type="radio" id="l2col2" class="l2col2" name="3col1r">
+                                            <label for="l2col2">2 Column</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" id="f3col3" class="f3col3" name="1col1r">
+                                            <label for="f3col3">3 Column</label>
+                                        </td>
+                                        <td>
+                                            <input type="radio" id="c3col3" class="c3col3" name="2col1r">
+                                            <label for="c3col3">3 Column</label>
+                                        </td>
+                                        <td>
+                                            <input type="radio" id="l3col3" class="l3col3" name="3col1r">
+                                            <label for="l3col3">3 Column</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </li></strong>
+
+                            <strong><li style="font-size: 20px; font-family:sans-serif">Select Remote Menu Term Options
+                                <table class="remoteterm">
+                                    <tr>
+                                        <td>
+                                            <input type="radio" id="remotet1" class="remotet1" name="terms">
+                                            <label for="remotet1">1 Term Menus</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" id="remotet2" class="remotet2" name="terms">
+                                            <label for="remotet2">2 Term Menus</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" id="remotet1and2" class="remotet1and2" name="terms">
+                                            <label for="remotet1and2">Both</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p style="font-size: 15px;">*If you have product brochures and visuals you would like 
+                                    to utilize please contact your sales rep to discuss adding 
+                                    them to your database.
+                                </p>
+                            </li></strong>
+
+                        </ol>
+                    </div>
+                </div>
+
+
+                <div class="sectionc">
+                    <h1 class="contactinfo">Section C: Only Required for <u>VisionTouch </u>Dealers</h1>
+                    <div class="contact">
+                        <ol>
+                            <strong><li style="font-size: 20px; font-family:sans-serif">Touch Menu Term Default Options
+                                <p style="font-size: 15px;"><em>Please note: column & Option selections 
+                                    for VisionTouch will copy selections from Section A Above.
+                                </em></p>
+                                <table class="remoteterms">
+                                    <tr>
+                                        <td>
+                                            <input type="radio" id="noterm" class="noterm" name="default" style="transform: scale(2); margin-right: 10px;" checked>
+                                            <label for="noterm">None</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" id="default1t" style="transform: scale(2); margin-right: 10px;" class="default1t" name="default">
+                                            <label for="default1t">Default to 1 Term Menus</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" id="default2t" style="transform: scale(2); margin-right: 10px;" class="default2t" name="default">
+                                            <label for="default2t">Default to 2 Term Menus</label>
+                                        </td>
+                                    </tr>
+                                </table><hr>
+                                </li></strong>
+
+                                <strong><li style="font-size: 20px; font-family:sans-serif;">Custom Questionnaire
+                                    <p style="font-size: 18px; font-family:sans-serif;">
+                                        Will you be using the customer Questionnaire?
+                                    </p>
+                                    
+                                    <form>
+                                        <input type="radio" id="questioncheck1" name="quest">
+                                        <label for="questioncheck1">Yes</label>
+                                        <input type="radio" id="questioncheck2" name="quest">
+                                        <label for="questioncheck2">No</label>
+                                    </form>
+
+                                    <p style="font-size: 18px; font-family:sans-serif;">
+                                        If yes, please get with your sales rep to discuss building the Questionnaire 
+                                        for your dealer.
+                                    </p>
+                                </li></strong>
+                        </ol>
+                    </div>
+                </div> 
+            </div>
+
+            <button id="p5" style="float: right;">Next</button>
+            <button id="p3b" style="float: left;">Back</button>
+            <p style="font-family: sans-serif; font-size: 16px; text-align: center;"><strong>Page 5 of 8</strong></p>
+
+        </div>
+
+        <div class="pg5">
+            <h1 style="font-size: 30px; font-family:sans-serif; text-align: center;">Special Menu & Disclosure Options</h1>
+            <div class="boxp21">
+                <div class="boxp2header">
+                    <h1 class="boxp2head">Section D: Only Required if Applicable to your dealership</h1>
+                </div>
+
+
+                <h1 class="sdp5h">Special Menu Options</h1>
+            
+                <div id="checks">
+                    <input type="checkbox" id="zp">
+                    <label for="zp">The Zero Plan®
+                        <p>*Requires existing agreement with Universal Lenders LLC</p>
+                    </label>
+
+                    <input type="checkbox" id="tom">
+                    <label for="tom">Team One Menu
+                        <p>*Requires existing agreement with Team One Group</p>
+                    </label>
+
+                    <input type="checkbox" id="rf">
+                    <label for="rf">Red Flags
+                        <p>*Requires existing agreement with Veretad Technologies LLC</p>
+                    </label>
+                </div>    
+            </div>
+
+                
+
+            <div class="boxp21">
+                <div class="boxp2header">
+                    <h1 class="boxp2head">Section E: Required for all VisionMenu Dealers</h1>
+                </div>
+
+                <h1 style="text-align:center;font-size: 30px; font-family: sans-serif;">Product Disclosure Payment Options</h1>
+                <div id="checks">
+                    <table id="disclosuretable" class="disclosuretable">
+                        <tr>
+                            <th>Accepted Products</th>
+                            <th>Declined Products</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="nopp" style="transform: scale(2); margin-right: 8px;" class="nopp" name="acc3" onclick="cbChange3(this)">
+                                <label for="nopp">No Product Pricing</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="nopp2" style="transform: scale(2); margin-right: 8px;" class="nopp2" name="dec4" onclick="cbChange4(this)">
+                                <label for="nopp2">No Product Pricing</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="day" style="transform: scale(2); margin-right: 8px;" class="day" name="acc2" onclick="cbChange(this)">
+                                <label for="day">Daily</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="day2" style="transform: scale(2); margin-right: 8px;" class="day2" name="dec2" onclick="cbChange2(this)">
+                                <label for="day2">Daily</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="mon1" style="transform: scale(2); margin-right: 8px;" class="mon1" name="acc2" onclick="cbChange(this)">
+                                <label for="mon">Monthly</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="mon2" style="transform: scale(2); margin-right: 8px;" class="mon2" name="dec2" onclick="cbChange2(this)">
+                                <label for="mon2">Monthly</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="tot" style="transform: scale(2); margin-right: 8px;" class="tot" name="acc3" onclick="cbChange3(this)">
+                                <label for="tot">Total</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="tot2" style="transform: scale(2); margin-right: 8px;" class="tot2" name="dec4" onclick="cbChange4(this)">
+                                <label for="tot2">Total</label>
+                            </td>
+                        </tr>
+                    </table>        
+                </div>
+            </div>
+
+            <div class="boxp21">
+                <div class="boxp2header">
+                    <h1 class="boxp2head">Section E: Required for all VisionMenu Dealers</h1>
+                </div>
+
+                <h1 style="text-align:center;font-size: 30px; font-family: sans-serif;">Additional Product Disclosure Options</h1>
+                <div id="checks">
+                    <input type="checkbox" id="tomp" style="margin-right: 8px;">
+                    <strong><label for="tomp">Show Total for Monthly Payments</label></strong>
+                    <p style="font-size: 16px; font-family:sans-serif">-Shows monthly total for accepted/declined products at the bottom of the disclosure page.</p>
+
+                    <input type="checkbox" id="hide" style="margin-right: 8px;">
+                    <strong><label for="hide">Hides Product Descriptions</label></strong>
+                    <p style="font-size: 16px; font-family:sans-serif">-Hides product descriptions from appearing under product names in disclosure page.</p>
+                </div><hr>
+                
+                <div id="checks">
+                    <input type="checkbox" id="requiredstate" style="margin-right: 8px;">
+                    <strong><label for="requiredstate">Required State Disclosure (if applicable)</label></strong>
+                </div>
+                <div id="checks2">
+                    <input type="checkbox" id="payment" style="margin-right: 8px;">
+                    <label for="payment">Payment including products accepted only</label><br>
+
+                    <input type="checkbox" id="amfin" style="margin-right: 8px;">
+                    <label for="amfin">Amount Financed Including Products Accepted</label>
+                </div>
+            </div>
+
+            <button id="p6" style="float: right;">Next</button>
+            <button id="p4b" style="float: left;">Back</button>
+            <p style="font-family: sans-serif; font-size: 16px; text-align: center;"><strong>Page 6 of 8</strong></p>
+
+        </div>
+
+        <div class="pg6">
+            <h1 style="font-size: 30px; font-family:sans-serif; text-align: center;">Dealership Lender List</h1>
+            <h1 style="font-size: 16px; font-family:sans-serif; text-align: center;"><em>(Please Note - Lender list is necessary for <u>non-integrated</u> dealerships only)</em></h1>
+
+
+
+            <table id="lendertable" class="lendertable">
+                <tr>
+                    <th style="width: 30%;">Lender Name</th>
+                    <th style="width: 38%;">Lender Address</th>
+                    <th style="width: 20%;">Phone</th>
+                </tr>
+                <tr id="clone5" class="clone5">
+                    <td>
+                        <input type="text" id="lendername" class="lendername" style="width: 99%; font-size: 20px; font-family: sans-serif; margin-left: auto; margin-right: auto; border-radius: 6px;" width="100%">
+                    </td>
+                    <td>
+                        <input type="text" id="lenderaddress" class="lenderaddress" style="width: 99%; font-size: 20px; font-family: sans-serif; margin-left: auto; margin-right: auto; border-radius: 6px; width:100%;">
+                    </td>
+                    <td>
+                        <input type="text" id="lenderphone" class="lenderphone" style="width: 99%; font-size: 20px; font-family: sans-serif; margin-left: auto; margin-right: auto; border-radius: 6px; width: 100%;">
+                    </td>
+                    <td style="text-align: center;"><input type="button" onclick="deleteRow5(this)" value="Delete" id="deleterow"></button></td>
+                </tr>
+            </table>
+            <input type="button" class="addlender" onclick="createRow5(this)" value="Add Lender" id="addrow"><br><br>
+
+            <button id="p7" style="float: right;">Next</button>
+            <button id="p5b" style="float: left;">Back</button>
+            <p style="font-family: sans-serif; font-size: 16px; text-align: center;"><strong>Page 7 of 8</strong></p>
+
+        </div>
+
+        <div class="pg7">
+            <h1 style="font-size: 30px; font-family:sans-serif; text-align: center;">Dealership Employee List</h1>
+            <h1 style="font-size: 16px; font-family:sans-serif; text-align: center;"><em>(Please list all employees, but note that <u>only</u> dealership personnel who will be utilizing the software require "Menu Access")</em></h1>
+
+            <table id="employees">
+                <tr id="lists">
+                    <th style="font-size: 100%; width: 20%;">Employee Name</th>
+                    <th style="width: 20%; font-size: 100%;">Title</th>
+                    <th style="width: 12%; font-size: 90%;">Menu Access (Y/N)</th>
+                    <th style="width: 12%; font-size: 90%;">vSignature Access (Y/N)</th>
+                    <th style="width: 25%; font-size: 100%;">Email Address</th>
+                </tr>
+                <tr id="emp" class="emp">
+                    <td style="width: 90%;">
+                        <input type="text" id="empname" class="empname" style="width: 90%; font-size: 20px; font-family: sans-serif; margin-left: auto; margin-right: auto; border-radius: 6px;">
+                    </td>
+                    <td>
+                        <select name="emptitle" class="emptitle" id="emptitle" style="width:90%; height: 20px;">
+                            <option disabled selected value>--Select Title--</option>
+                            <option value="dealerprincipal">Dealer Principal</option>
+                            <option value="fimanager">F&I Manager</option>
+                            <option value="officemanager">Office Manager</option>
+                            <option value="salesmanager">Sales Manager</option>
+                            <option value="salesperson">Salesperson</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="menuaccess" class="menuaccess">
+                    </td>
+                    <td>
+                        <input type="checkbox" id="vsignaccess" class="vsignaccess">
+                    </td>
+                    <td>
+                        <input type="text" id="empemail" class="empemail" style="width: 90%; font-size: 20px; font-family: sans-serif; margin-left: auto; margin-right: auto; border-radius: 6px;">
+                    </td>
+                    <td>
+                        <input type="button" onclick="deleteRow6(this)" value="Delete" id="deleterow"></button>
+                    </td>
+                </tr>
+            </table>
+            <input type="button" class="addemp" onclick="createRow6(this)" value="Add User" id="addrow"><br><br>
+            <div class="submitBtn" id="submitBtn">
+                <button id="p6b" style="float: left;">Back</button>
+                <button id="modalBtn" class="modalBtn" style="float: right;">Submit</button>
+                <button id="nextDealer" class="nextDealer">Add Dealer</button>
+            </div>
+
+            <p style="font-family: sans-serif; font-size: 16px; text-align: center;"><strong>Page 8 of 8</strong></p>
+
+        </div>
+
+
+
+        <div class="modal" id="error_modal">
+            <div class="modal_content">
+                <div class="error_header">
+                    <span class="close">&times</span>
+                    <h1 style="font-family: sans-serif; font-size: 30px;">Input Error</h1>
+                </div>
+                <p id="error_message"></p>
+            </div>
+        </div>
+
+    </body>
+
+</html>

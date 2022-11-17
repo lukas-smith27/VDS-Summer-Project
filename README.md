@@ -1,0 +1,4 @@
+# VDS-Summer-Project
+During my Summer '22 internship, I was given a project that would help automotive dealerships sign up to use our company's software. This application helps guide users to fill out the appropriate information to accurately create a custom menu layout for the corresponding dealership.
+
+This page was created with HTML, JavaScript, jQuery, and SCSS/CSS. The project was just to design and implement the UI, so there is no back-end to this page. All of the information is stored in a JSON object and can be sent to a server to provide information on specific wants and needs of the intended users.
